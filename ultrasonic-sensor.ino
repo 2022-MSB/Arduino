@@ -1,6 +1,10 @@
+#include <afstandssensor.h>
+
+AfstandsSensor afstandssensor(13, 12);
+
 //초음파 센서의 핀번호를 설정한다.
 int echoPin = 12;
-int trigPin = 13;
+int trigPin = 13
 
 void setup() {
   Serial.begin(9600);
@@ -24,6 +28,7 @@ void loop() {
   
   Serial.print(distance);
   Serial.println("cm");
+  Serial.println(afstandssensor.afstandCM());
+  delay(500);
   // 수정한 값을 출력
-  delay(100);
 }

@@ -4,7 +4,7 @@ AfstandsSensor afstandssensor(13, 12);
 
 //초음파 센서의 핀번호를 설정한다.
 int echoPin = 12;
-int trigPin = 13
+int trigPin = 13;
 
 void setup() {
   Serial.begin(9600);
